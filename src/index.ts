@@ -17,7 +17,7 @@ export class Ollama extends OllamaBrowser {
     }
     try {
       if (fs.existsSync(image)) {
-        // this is a filepath, read the file and convert it to base64
+        // this is a filepath, read the file and convert it to base64jj
         const fileBuffer = await promises.readFile(resolve(image))
         return Buffer.from(fileBuffer).toString('base64')
       }
