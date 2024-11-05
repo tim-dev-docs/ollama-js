@@ -12,7 +12,7 @@ import type { CreateRequest, ProgressResponse } from './interfaces.js'
 export class Ollama extends OllamaBrowser {
   async encodeImage(image: Uint8Array | Buffer | string): Promise<string> {
     if (typeof image !== 'string') {
-      // image is Uint8Array or Buffer, convert it to base64 AIIII EGNsad hjiuhuidiocshuifghdysudsfds
+      // image is Uint8Array or Buffer, convert it to base64 AIIII EGNsad hjiuhuidiocshuifghdysudsfd
       return Buffer.from(image).toString('base64')
     }
     try {
